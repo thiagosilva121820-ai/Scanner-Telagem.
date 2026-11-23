@@ -1,0 +1,26 @@
+SCANNER DE TELAGEM COMPLETO - PROJETO ANDROID
+
+Compatibilidade: Android 10 ou superior (minSdk 29).
+
+RECURSOS INICIAIS:
+- Seleção de uma pasta pelo seletor oficial do Android (SAF).
+- Permissão persistente de leitura para a pasta escolhida, quando suportada.
+- Busca recursiva por nomes de arquivos/pastas com termos configurados.
+- SHA-256 dos arquivos encontrados até 50 MB.
+- Consulta de pacotes de aplicativos visíveis ao sistema.
+- Exportação de relatório TXT.
+
+LIMITES IMPORTANTES:
+- Não acessa dados privados de outros aplicativos, mensagens, senhas ou histórico privado.
+- O Android pode bloquear pastas especiais, mesmo após seleção.
+- Nome correspondente é apenas indício, não prova de instalação ou uso.
+- QUERY_ALL_PACKAGES pode ser restrito por políticas de lojas; este projeto foi pensado para instalação direta e uso autorizado.
+
+GERAR APK:
+1. Envie o conteúdo deste ZIP para um repositório GitHub novo.
+2. Abra a aba Actions do repositório.
+3. Selecione "Build APK" e toque em "Run workflow" (ou aguarde o build após enviar para main).
+4. Abra a execução concluída e baixe o artefato "Scanner-de-Telagem-APK".
+5. Extraia o ZIP do artefato e instale app-debug.apk no Android, autorizando a instalação dessa origem se necessário.
+
+Para compilar localmente, abra a pasta no Android Studio e use Build > Build Bundle(s) / APK(s) > Build APK(s).
